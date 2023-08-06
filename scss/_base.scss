@@ -167,6 +167,7 @@ body {
   font-weight: 500;
   user-select: none;
   color: var(--text-contract);
+  overflow: auto;
 }
 
 @mixin flex($justify: center, $align: center, $wrap: nowrap) {
