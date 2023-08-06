@@ -1,0 +1,111 @@
+@import '../../scss/base';
+
+:root {
+  --wall-background: #dcdcd8;
+  --background: #ebe1cd;
+  --text: #2a200c;
+}
+
+body {
+  background-color: var(--wall-background);
+  width: 100%;
+}
+
+.page {
+  width: 1440px;
+  margin: 60px auto;
+  background-color: var(--background);
+  box-shadow: 0 0 10px rgb(141, 141, 141);
+}
+.wrapper {
+  max-width: 1200px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+.header {
+  &__inner {
+    &-text {
+      @include flex(space-between, center);
+      & i {
+        font-size: 25px;
+      }
+    }
+    & p {
+      margin-top: 40px;
+      background-color: #2a200c;
+      width: 1220px;
+      height: 2px;
+    }
+  }
+}
+
+.heading {
+  &__inner {
+    position: relative;
+    letter-spacing: 10px;
+    @include flex(center, center);
+    flex-direction: column;
+    margin-top: 78px;
+    &-name {
+      text-align: center;
+      text-transform: uppercase;
+      & h1 {
+        font-size: 40px;
+        &:last-child {
+          margin-block: 40px 27px;
+        }
+      }
+    }
+    &-image {
+      @include flex(center, center);
+      flex-direction: column;
+      & img {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+      }
+      & h1 {
+        position: absolute;
+        bottom: -5%;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.main {
+  &__inner {
+    margin-top: 100px;
+    &-item {
+      max-width: 410px;
+      &-heading {
+        & p {
+          margin-top: 20px;
+          background-color: var(--text);
+          width: 195px;
+          height: 2px;
+        }
+      }
+      &-content {
+        margin-top: 45px;
+        & span {
+          letter-spacing: 1px;
+        }
+      }
+      &-action {
+        &-download {
+          margin-top: 40px;
+        }
+        &-social {
+          margin-top: 40px;
+          & a {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

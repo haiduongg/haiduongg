@@ -1,0 +1,166 @@
+// For Mobile: < 740px
+@media only screen and (max-width: 46.1875em) {
+  .container {
+    margin: 10px 50px;
+    padding-inline: 10%;
+    background-color: var(--border);
+    border-radius: 10px;
+  }
+  .header {
+    &__inner {
+      padding: 0 7%;
+      @include flex(space-between, center);
+      &-nav_desktop {
+        display: none;
+      }
+      &-nav_mobile {
+        z-index: 1;
+        width: calc(100% - 10%);
+        position: fixed;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-inline: 5%;
+        background-color: var(--text);
+        border-radius: 10px;
+        padding: 10px;
+        & ul {
+          @include flex(center, center);
+          & li {
+            margin-inline: 30px;
+            cursor: pointer;
+            list-style: none;
+            & i {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    &__inner {
+      flex-direction: column-reverse;
+      &-introduction {
+        padding-top: 0;
+        margin-top: 30px;
+        & h1,
+        h2 {
+          text-align: center;
+        }
+        &-action {
+          &-item {
+            width: 40px;
+            height: 40px;
+            margin: 30px 7% 0 0;
+            padding: 10px;
+            & i {
+              font-size: 15px;
+            }
+            &:last-child {
+              width: 140px;
+              height: 55px;
+              font-size: 15px;
+              & a {
+                & i {
+                  font-size: 20px;
+                  padding-right: 17px;
+                }
+              }
+            }
+            &:hover {
+              &:last-child {
+                font-size: 15px;
+                letter-spacing: 3px;
+                & a {
+                  & i {
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &-box {
+        min-height: 0;
+        position: static;
+        &-backbox {
+          border: none;
+        }
+        &-image {
+          @include flex(center, center);
+          position: static;
+          border: none;
+          transform: none;
+          & img {
+            transform: none;
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    &__inner {
+      &-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        &-informations {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        &-skills {
+          width: 100px;
+          margin-bottom: 200px;
+        }
+      }
+    }
+  }
+
+  .services {
+    &__inner {
+      &-heading {
+        max-width: 200px;
+        margin: 30px auto;
+      }
+      &-content {
+        margin: 0px 10%;
+        max-width: calc(100vw);
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+    margin-bottom: 200px;
+  }
+
+  .contact {
+    &__inner {
+      &-action {
+        & form {
+          .area_input {
+            display: grid;
+            grid-template-columns: 1fr;
+            & input {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// For Tablet: 740px to 1204px
+@media only screen and (min-width: 46.25em) and (max-width: 75.25em) {
+  .header {
+    display: none;
+  }
+}
+
+// For Desktop: >= 1205px
+@media only screen and (min-width: 75.3125em) {
+}

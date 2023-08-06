@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+		rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="./css/style.css">
+	<title>haiduongg | Portfolio Website</title>
+</head>
+
+<body>
+	<div class="page">
+		<!-- header -->
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__inner-logo">
+					<a href="index.html">haiduong.</a>
+				</div>
+				<nav class="header__inner-nav_desktop">
+					<ul class="navigation">
+						<li><a href="#"><i class='bx bx-home-alt'></i>Home</a></li>
+						<li><a href="#"><i class='bx bx-message-square-edit'></i>About</a>
+						<li><a href="#"><i class='bx bx-cube-alt'></i>Services</a>
+						<li><a href="#"><i class='bx bx-phone'></i>Contact</a>
+					</ul>
+					<ul class="notification">
+						<li><i class='bx bx-moon' id="btn-dark"></i></li>
+						<li><i class='bx bx-bell'></i></li>
+					</ul>
+				</nav>
+
+				<nav class="header__inner-nav_mobile">
+					<ul>
+						<li><i class='bx bx-home-alt'></i></li>
+						<li><i class='bx bx-message-square-edit'></i></li>
+						<li><i class='bx bx-cube-alt'></i></li>
+					</ul>
+				</nav>
+
+				<div class="header__inner-action">
+					<center><img src="./img/avatar.png" alt="" id="avatar"></center>
+					<div class="header__inner-action-menu" id="settings">
+						<div class="header__inner-action-menu-item">
+							<h4>Change Color Theme</h4>
+							<div class="color">
+								<div class="color-item"></div>
+								<div class="color-item"></div>
+								<div class="color-item"></div>
+								<div class="color-item"></div>
+								<div class="color-item"></div>
+								<div class="color-item"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Article-->
+		<!-- Home -->
+		<section class="home active" id="#home">
+			<div class="container home__inner">
+				<div class="home__inner-introduction">
+					<h2>Hello, I am</h2>
+					<h1>Cao Hai Duong</h1>
+					<span>
+						I am a Vietnamese Programmer.
+						<br>
+						I was born in 2004, in a rural area in Vietnam. I am currently a Web Developer and my future
+						goal is to become a
+						Fullstack Developer. Programming Languages can I use “C++”, “Python”, “HTML”, “Css”,
+						“Javascript”,... and some
+						population Framework.
+					</span>
+					<div class="home__inner-introduction-action">
+						<div class="home__inner-introduction-action-item">
+							<a href="https://www.facebook.com/haiduong004" target="_blank">
+								<i class='bx bxl-facebook'></i>
+							</a>
+						</div>
+						<div class="home__inner-introduction-action-item">
+							<a href="https://www.linkedin.com/in/cao-hai-duong-253034258/" target="_blank">
+								<i class='bx bxl-linkedin'></i>
+							</a>
+						</div>
+
+						<div class="home__inner-introduction-action-item">
+							<a href="https://twitter.com/_haiduong004" target="_blank">
+								<i class='bx bxl-twitter'></i>
+							</a>
+						</div>
+						<div class="home__inner-introduction-action-item">
+							<a href="https://github.com/haiduongg" target="_blank">
+								<i class='bx bxl-github'></i>
+							</a>
+						</div>
+						<div class="home__inner-introduction-action-item">
+							<a href="./pages/resume.html">
+								<i class='bx bx-receipt'></i>
+								Resume
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="home__inner-box">
+					<div class="home__inner-box-backbox">
+						<div class="home__inner-box-image">
+							<img src="./img/img__nobackground.png" alt="Cao Hai Duong Avatar">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section class="about" id="about">
+			<div class="container about__inner">
+				<div class="about__inner-heading">
+					<h1>About Me</h1>
+					<p class="line-long"></p>
+					<p class="line-short"></p>
+				</div>
+				<div class="about__inner-description">
+					<h2>I'm Hai Duong and <b>Web Developer</b></h2>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem animi praesentium eum
+						quo corrupti id ipsa excepturi nobis sapiente autem cupiditate architecto sed quae ab dolor,
+						totam assumenda aut? id ipsa excepturi nobis sapiente autem cupiditate architecto sed quae ab
+						dolor, totam assumenda aut?</span>
+				</div>
+				<div class="about__inner-main">
+					<div class="about__inner-main-informations">
+						<p><b>Birthday:</b> 03/09/2004</p>
+						<p><b>Age:</b> 19</p>
+						<p><b>Website:</b> haiduongg.com</p>
+						<p><b>Email:</b> caohaiduong04@gmail.com</p>
+						<p><b>Degrey:</b> Bachelor</p>
+						<p><b>Phone:</b> 0862248332</p>
+						<p><b>City:</b> Binh Dinh, Viet Nam</p>
+					</div>
+					<div class="about__inner-main-skills">
+						<div class="about__inner-main-skills-item">
+							<b>HTML</b>
+							<progress value="70" max="100"></progress>
+						</div>
+						<div class="about__inner-main-skills-item">
+							<b>Css</b>
+							<progress value="80" max="100"></progress>
+						</div>
+						<div class="about__inner-main-skills-item">
+							<b>Javascript</b>
+							<progress value="50" max="100"></progress>
+						</div>
+						<div class="about__inner-main-skills-item">
+							<b>NodeJs</b>
+							<progress value="20" max="100"></progress>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services -->
+		<section class="services" id="services">
+			<div class="services__inner">
+				<div class="services__inner-heading">
+					<h1>Services</h1>
+				</div>
+				<div class="services__inner-content">
+					<div class="services__inner-content-item">
+						<div class="heading">
+							<i class='bx bx-palette'></i>
+							<h2>UI/UX Designer</h2>
+							<p></p>
+						</div>
+						<p>Here are some of the important criteria to evaluate a good UI/UX Design service</p>
+						<p>
+							<i class='bx bx-check'></i>
+							User experience
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							User interface
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Features
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Security
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Accessibility
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Flexibility
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Feasibility
+						</p>
+					</div>
+					<div class="services__inner-content-item">
+						<div class="heading">
+							<i class='bx bx-code-alt'></i>
+							<h2>Web Developer</h2>
+							<p></p>
+						</div>
+						<p>Here are some of the important criteria to evaluate a good UI/UX Design service</p>
+						<p>
+							<i class='bx bx-check'></i>
+							User experience
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							User interface
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Features
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Security
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Accessibility
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Flexibility
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Feasibility
+						</p>
+					</div>
+					<div class="services__inner-content-item">
+						<div class="heading">
+							<i class='bx bx-desktop'></i>
+							<h2>Desktop Application</h2>
+							<p></p>
+						</div>
+						<p>Here are some of the important criteria to evaluate a good UI/UX Design service</p>
+						<p>
+							<i class='bx bx-check'></i>
+							User experience
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							User interface
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Features
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Security
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Accessibility
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Flexibility
+						</p>
+						<p>
+							<i class='bx bx-check'></i>
+							Feasibility
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="contact" id="contact">
+			<div class="contact__inner">
+				<div class="contact__inner-heading">
+					<h1>
+						Contact
+						<p>Me</p>
+					</h1>
+				</div>
+				<div class="contact__inner-action">
+					<form action="" method="">
+						<div class="area_input">
+							<input type="text" placeholder="Full Name">
+							<input type="email" placeholder="Email Address">
+							<input type="number" placeholder="Mobile Number">
+							<input type="text" placeholder="Email Subject">
+							<input type="text" name="" id="" placeholder="Your Message">
+						</div>
+						<input type="submit" value="Send Message" id="btn-submit">
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
