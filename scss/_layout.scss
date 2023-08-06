@@ -54,6 +54,9 @@
     display: grid;
     grid-template-columns: 300px 1fr 200px;
     align-items: center;
+    #btn-menu {
+      display: none;
+    }
     &-logo {
       text-align: center;
       & a {

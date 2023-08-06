@@ -263,6 +263,9 @@ input[type=number] {
 .header__inner #btn-menu {
   display: none;
 }
+.header__inner #btn-menu {
+  display: none;
+}
 .header__inner-logo {
   text-align: center;
 }
