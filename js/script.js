@@ -3,20 +3,9 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const tabs = $$('.header__inner nav ul li a');
-const tabs_mobile = $$('.header__inner-nav_mobile ul li i');
 const panes = $$('section');
 
 tabs.forEach((tab, index) => {
-  tab.onclick = function () {
-    const pane = panes[index];
-
-    $('section.active').classList.remove('active');
-
-    pane.classList.add('active');
-  };
-});
-
-tabs_mobile.forEach((tab, index) => {
   tab.onclick = function () {
     const pane = panes[index];
 
@@ -50,3 +39,16 @@ avatar.onclick = function () {
   }
 };
 
+// Dropdown for Mobile
+const btnIcon = document.getElementById('btn-menu');
+
+btnIcon.onclick = () => {
+  if (btnIcon.classList.contains('bx-menu')) {
+    btnIcon.classList.replace('bx-menu','bx-x');
+    $('.header__inner nav').setAttribute('style', 'display: block!important;');
+    console.log($('.header__inner nav'))
+  } else {
+    btnIcon.classList.replace('bx-x', 'bx-menu');
+    $('.header__inner nav').setAttribute('style', 'display: none!important;');
+  }
+}

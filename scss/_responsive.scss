@@ -8,34 +8,39 @@
   }
   .header {
     &__inner {
+      #btn-menu {
+        display: block;
+        & i {
+          font-size: 30px;
+        }
+      }
       padding: 0 7%;
       @include flex(space-between, center);
-      &-nav_desktop {
+      position: relative;
+      & nav {
         display: none;
-      }
-      &-nav_mobile {
-        z-index: 1;
-        width: calc(100% - 10%);
-        position: fixed;
-        display: block;
-        bottom: 0;
-        left: 0;
+        position: absolute;
+        top: 70px;
         right: 0;
-        margin-inline: 5%;
+        left: 0;
         background-color: var(--text);
         border-radius: 10px;
-        padding: 10px;
-        & ul {
-          @include flex(center, center);
-          & li {
-            margin-inline: 30px;
-            cursor: pointer;
-            list-style: none;
-            & i {
-              font-size: 35px;
-            }
+        width: 100%;
+        .navigation {
+          margin: 0 auto;
+          flex-direction: column;
+          line-height: 50px;
+          & li,
+          li:last-child {
+            margin: 0;
           }
         }
+        .notification {
+          display: none;
+        }
+      }
+      &-action {
+        display: none;
       }
     }
   }
