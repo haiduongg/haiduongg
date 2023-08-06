@@ -40,15 +40,14 @@ avatar.onclick = function () {
 };
 
 // Dropdown for Mobile
-const btnIcon = $('#btn-menu i')
+const btnIcon = $('#btn-menu i');
 
 btnIcon.onclick = () => {
   if (btnIcon.classList.contains('bx-menu')) {
-    btnIcon.classList.replace('bx-menu','bx-x');
+    btnIcon.classList.replace('bx-menu', 'bx-x');
     $('.header__inner nav').setAttribute('style', 'display: block!important;');
   } else {
     btnIcon.classList.replace('bx-x', 'bx-menu');
     $('.header__inner nav').setAttribute('style', 'display: none!important;');
-    document.body.setAttribute('style', 'opacity: 1');
   }
-}
+};

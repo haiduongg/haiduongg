@@ -40,7 +40,14 @@
           }
         }
         .notification {
-          display: none;
+          // display: none;
+          line-height: 50px;
+          flex-direction: column;
+          & li {
+            &:last-child {
+              margin-left: 0;
+            }
+          }
         }
       }
       &-action {
